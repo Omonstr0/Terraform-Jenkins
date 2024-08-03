@@ -13,7 +13,7 @@ pipeline {
         stage('checkout') {
             steps {
                  script{
-                        dir("terraform")
+                        dir("terraform/")
                         {
                             git "https://github.com/Omonstr0/Terraform_aws.git"
                         }
